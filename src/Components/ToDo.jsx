@@ -15,7 +15,7 @@ const ToDo = ({ tasks }) => {
   }
   return (
     <ToDoStyle theme={theme}>
-      <div className='holder'>
+      <div className='taskHolder'>
         <p className={tasks.complete ? "complete task" : "task"}>
           {tasks.task}
         </p>
@@ -30,7 +30,7 @@ const ToDo = ({ tasks }) => {
 
 const ToDoStyle = styled.div`
   width: 100%;
-  .holder {
+  .taskHolder {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -46,7 +46,7 @@ const ToDoStyle = styled.div`
       transition: all 0.5s ease-in-out;
       border-color: ${(props) => props.theme.border};
       font-size: 1.7rem;
-      font-family: "Yellowtail", cursive;
+      font-weight: 700;
       &::first-letter {
         text-transform: capitalize;
       }

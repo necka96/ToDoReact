@@ -7,7 +7,7 @@ const Nav = () => {
   const theme = useTheme();
   return (
     <NavStyle theme={theme}>
-      <div className='holder'>
+      <div className='navHolder'>
         <div className='title'>To Do List</div>
         <div className='ball'>
           {colorThemes.map((theme, index) => {
@@ -25,11 +25,9 @@ const Nav = () => {
   );
 };
 const NavStyle = styled.nav`
-  position: absolute;
-  top: 0;
   width: 100%;
 
-  .holder {
+  .navHolder {
     padding: 1rem 2rem;
     width: 90%;
     margin: 0 auto;
@@ -43,10 +41,10 @@ const NavStyle = styled.nav`
       grid-column: span 6;
       transition: all 0.5s ease-in-out;
       color: ${(props) => props.theme.text};
-      font-family: "Dancing Script", cursive;
+      font-weight: 700;
     }
     .ball {
-      grid-column: 9 / span 3;
+      grid-column: 9 / span 4;
       align-self: flex-end;
       display: flex;
       justify-content: center;

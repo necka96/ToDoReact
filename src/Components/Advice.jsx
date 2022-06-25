@@ -13,7 +13,7 @@ const Advice = () => {
       {error && <div>{error}</div>}
       {data && (
         <div>
-          <div>
+          <div className='adviceHolder'>
             <p>
               {" "}
               I will give you advice: <br /> <span>{data.advice}</span>{" "}
@@ -26,21 +26,21 @@ const Advice = () => {
 };
 
 const AdviceStyle = styled.div`
-  margin-top: 2rem;
-  p {
-    font-size: 2rem;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 7rem;
-    font-family: "Dancing Script", cursive;
-    span {
-      display: inline-block;
-      margin: 2rem 0;
-      text-decoration: underline;
-      font-size: 2.2rem;
-      font-family: "Yellowtail", cursive;
-      font-weight: bold;
+  .adviceHolder {
+    p {
+      font-size: 2rem;
+      text-align: center;
+      width: 70%;
+
+      margin: 0 auto;
+      font-family: "Open Sans", sans-serif;
+      span {
+        display: inline-block;
+        margin: 2rem 0;
+        text-decoration: underline;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
     }
   }
 `;

@@ -28,8 +28,8 @@ const App = () => {
           </div>
         </div>
 
-        <Nav />
         <div className='holder'>
+          <Nav />
           <Advice />
           <ForomToDo />
           <ToDoList />
@@ -54,7 +54,7 @@ const AppStyled = styled.div`
     top: 0;
     width: 100%;
     background: ${(props) => props.theme.bg};
-    height: 100%;
+    height: 100vh;
     z-index: 100;
     display: grid;
     place-items: center;
@@ -92,6 +92,10 @@ const AppStyled = styled.div`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
 

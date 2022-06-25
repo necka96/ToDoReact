@@ -7,6 +7,7 @@ const GlobatStlye = createGlobalStyle`
  box-sizing: border-box ;
  list-style: none ;
  overflow-x: hidden ;
+ font-family: 'Open Sans', sans-serif;
 }
 a{
  text-decoration: none ;

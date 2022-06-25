@@ -61,7 +61,7 @@ const FormStyle = styled.div`
       border-radius: 6px;
       border: none;
       background: transparent;
-      font-family: "Dancing Script", cursive;
+
       color: ${(props) => props.theme.text};
     }
 
@@ -74,7 +74,7 @@ const FormStyle = styled.div`
       color: ${(props) => props.theme.textBtn};
       font-size: 1.5rem;
       cursor: pointer;
-      font-family: "Dancing Script", cursive;
+
       transition: all 0.5s ease-in-out;
       &:hover {
         opacity: 0.9;
