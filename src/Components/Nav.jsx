@@ -28,7 +28,7 @@ const NavStyle = styled.nav`
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 100px;
+
   .holder {
     padding: 1rem 2rem;
     width: 90%;
@@ -46,30 +46,32 @@ const NavStyle = styled.nav`
       font-family: "Dancing Script", cursive;
     }
     .ball {
-      grid-column: 10 / span 2;
+      grid-column: 9 / span 3;
       align-self: flex-end;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 20px;
       button {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         border: none;
         cursor: pointer;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid ${(props) => props.theme.border};
       }
     }
   }
   @media screen and (max-width: 768px) {
     .holder {
       padding: 1rem;
+      gap: 2rem 0;
       .title {
-        grid-column: span 5;
+        grid-column: span 12;
+        text-align: center;
       }
       .ball {
-        grid-column: span 5;
+        grid-column: span 12;
       }
     }
   }
