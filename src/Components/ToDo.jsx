@@ -39,7 +39,7 @@ const ToDoStyle = styled.div`
     .task {
       grid-column: span 10;
       padding: 1rem;
-      font-size: 2rem;
+      font-size: clamp(1.3rem, 4vw, 2rem);
       outline: none;
       border-radius: 6px;
       border: 2px solid;

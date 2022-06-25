@@ -61,7 +61,7 @@ const NavStyle = styled.nav`
     }
   }
   @media screen and (max-width: 768px) {
-    .holder {
+    .navHolder {
       padding: 1rem;
       gap: 2rem 0;
       .title {

@@ -56,13 +56,14 @@ const FormStyle = styled.div`
     input {
       grid-column: span 6;
       padding: 1rem;
-      font-size: 1.5rem;
+      font-size: clamp(1.3rem, 4vw, 2rem);
       outline: none;
-      border-radius: 6px;
+
       border: none;
       background: transparent;
-
+      border-bottom: 2px solid ${(props) => props.theme.border};
       color: ${(props) => props.theme.text};
+      outline: none;
     }
 
     button {
@@ -72,7 +73,7 @@ const FormStyle = styled.div`
       border-radius: 6px;
       background: ${(props) => props.theme.btn};
       color: ${(props) => props.theme.textBtn};
-      font-size: 1.5rem;
+      font-size: clamp(1.3rem, 4vw, 2rem);
       cursor: pointer;
 
       transition: all 0.5s ease-in-out;
