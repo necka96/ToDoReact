@@ -32,7 +32,7 @@ const AdviceStyle = styled.div`
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
     font-family: "Dancing Script", cursive;
     span {
       display: inline-block;

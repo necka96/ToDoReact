@@ -62,8 +62,10 @@ const AppStyled = styled.div`
     .balls {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 10px;
-
+      width: 100%;
+      height: 100%;
       .ball {
         width: 50px;
         height: 50px;
