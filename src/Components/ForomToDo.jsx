@@ -63,7 +63,6 @@ const FormStyle = styled.div`
       background: transparent;
       font-family: "Dancing Script", cursive;
       color: ${(props) => props.theme.text};
-      border: 2px solid black;
     }
 
     button {
@@ -85,7 +84,7 @@ const FormStyle = styled.div`
   @media screen and (max-width: 768px) {
     form {
       input {
-        grid-column: span 10;
+        grid-column: span 12;
       }
       button {
         grid-column: span 12;
