@@ -38,7 +38,6 @@ const ForomToDo = () => {
           placeholder='Enter your task'
           id='text'
         />
-        <label htmlFor='text'>Enter your task</label>
 
         <button>Add toDo</button>
       </form>
@@ -57,39 +56,14 @@ const FormStyle = styled.div`
     input {
       grid-column: span 6;
       padding: 1rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       outline: none;
       border-radius: 6px;
       border: none;
       background: transparent;
       font-family: "Dancing Script", cursive;
       color: ${(props) => props.theme.text};
-
-      &::placeholder {
-        color: transparent;
-      }
-      &:placeholder-shown {
-        & ~ label {
-          top: 1.5rem;
-          left: 3rem;
-        }
-      }
-      &:focus {
-        & ~ label {
-          top: -2rem;
-          left: 2rem;
-        }
-      }
-    }
-    label {
-      position: absolute;
-      top: 1.5rem;
-      left: 3rem;
-      font-family: "Dancing Script", cursive;
-      padding: 0.5rem;
-      font-size: 2rem;
-      pointer-events: none;
-      transition: all 0.3s ease-in-out;
+      border: 2px solid black;
     }
 
     button {
@@ -99,7 +73,7 @@ const FormStyle = styled.div`
       border-radius: 6px;
       background: ${(props) => props.theme.btn};
       color: ${(props) => props.theme.textBtn};
-      font-size: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       font-family: "Dancing Script", cursive;
       transition: all 0.5s ease-in-out;

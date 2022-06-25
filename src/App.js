@@ -4,13 +4,13 @@ import Advice from "./Components/Advice";
 import ForomToDo from "./Components/ForomToDo";
 import Nav from "./Components/Nav";
 import ToDoList from "./Components/ToDoList";
-import { useTheme, useUpdateTheme } from "./Helpers/ThemeContext";
+import { useTheme } from "./Helpers/ThemeContext";
 import { ToDoContext } from "./Helpers/ToDoContext";
 
 const App = () => {
   const theme = useTheme();
   const [preloader, setPreloader] = useState(true);
-  const setTheme = useUpdateTheme();
+
   useEffect(() => {
     window.addEventListener("load", () => {
       setPreloader(false);

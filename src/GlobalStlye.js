@@ -6,6 +6,7 @@ const GlobatStlye = createGlobalStyle`
  margin: 0 ;
  box-sizing: border-box ;
  list-style: none ;
+ overflow-x: hidden ;
 }
 a{
  text-decoration: none ;

@@ -28,6 +28,7 @@ const NavStyle = styled.nav`
   position: absolute;
   top: 0;
   width: 100%;
+  min-height: 100px;
   .holder {
     padding: 1rem 2rem;
     width: 90%;
@@ -39,14 +40,14 @@ const NavStyle = styled.nav`
     border-color: ${(props) => props.theme.border};
     .title {
       font-size: 1.5rem;
-      grid-column: span 10;
+      grid-column: span 6;
       transition: all 0.5s ease-in-out;
       color: ${(props) => props.theme.text};
       font-family: "Dancing Script", cursive;
     }
     .ball {
-      grid-column: span 2;
-
+      grid-column: 10 / span 2;
+      align-self: flex-end;
       display: flex;
       justify-content: center;
       align-items: center;

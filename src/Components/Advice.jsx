@@ -26,13 +26,13 @@ const Advice = () => {
 };
 
 const AdviceStyle = styled.div`
+  margin-top: 2rem;
   p {
     font-size: 2rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
     font-family: "Dancing Script", cursive;
     span {
       display: inline-block;
